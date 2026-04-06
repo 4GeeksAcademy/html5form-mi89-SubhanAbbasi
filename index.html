@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Payment Form</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <strong>Payment form example</strong>
+    </div>
+
+    <div class="card-body">
+
+      <!-- Alert -->
+      <div class="alert alert-danger">
+        Some fields are missing
+      </div>
+
+      <!-- Row 1 -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">Card #</label>
+          <input type="text" class="form-control" placeholder="XXXXXXXXXXXXXXXX" required>
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">CVC #</label>
+          <input type="number" class="form-control" placeholder="0000" required>
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">Amount</label>
+          <div class="input-group">
+            <span class="input-group-text">$</span>
+            <input type="number" class="form-control" placeholder="Amount" required>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">First Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="col-md-6">
+          <label class="form-label">Last Name</label>
+          <input type="text" class="form-control" required>
+        </div>
+      </div>
+
+      <!-- Row 3 -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label class="form-label">City</label>
+          <input type="text" class="form-control" required>
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">State</label>
+          <select class="form-select" required>
+            <option selected disabled>Pick a state</option>
+            <option>Missouri</option>
+            <option>Illinois</option>
+            <option>Texas</option>
+          </select>
+        </div>
+
+        <div class="col-md-3">
+          <label class="form-label">Postal Code</label>
+          <input type="text" class="form-control" required>
+        </div>
+      </div>
+
+      <!-- Payment icons -->
+      <div class="mb-3">
+        <label class="form-label">We accept:</label><br>
+        <button class="btn btn-secondary btn-sm">Visa</button>
+        <button class="btn btn-secondary btn-sm">MasterCard</button>
+        <button class="btn btn-secondary btn-sm">Amex</button>
+        <button class="btn btn-secondary btn-sm">Discover</button>
+      </div>
+
+      <!-- Message -->
+      <div class="mb-3">
+        <label class="form-label">Message</label>
+        <textarea class="form-control" rows="3" placeholder="Add any notes here."></textarea>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="card-footer text-end">
+      <button class="btn btn-secondary">Cancel</button>
+      <button class="btn btn-primary">Send</button>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
